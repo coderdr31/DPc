@@ -1,0 +1,10 @@
+
+##################################################################
+## vim  
+##################################################################
+<Esc>代表Escape键:<CR>代表Enter键；<D>代表Command键。
+Alt键可以使用<M-key>或<A-key>来表示。<C>代表Ctrl.
+对于组合键，可以用<C-Esc>代表Ctrl-Esc；使用<S-F1>表示Shift-F1.
+(1) .vimrc 是控制 vim 行为的配置文件，位于 ~/.vimrc
+(2) ~/.vim/ 放插件
+(3) vundle(插件管理) PluginInstall PluginClean PluginUpdate

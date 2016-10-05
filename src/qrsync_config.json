@@ -1,0 +1,14 @@
+{
+    # 详细配置见 http://docs.qiniu.com/tools/v6/qrsync.html
+    # 这里是我的 Github + Hex 的个人图床
+    # 注释的格式真逆天
+    # "access_key": "A5MSFRbyvESXbEuXknXWcm_8SPqS2IYWpCFBHSBw",  # 个人中心 -> 密钥管理
+    # "secret_key": "JhntoocpwB6IHq6GHcRAPOm4cu1nNHRScfIB39Sr",
+    "src": "/home/dr/github/DGithub/Dqrsync",
+    "dest": "qiniu:access_key=0ewlOASmGY8EkT7_R-D4TrEOAJwr0mBsiBbBu7e9&secret_key=MBI7ofVgLIWKTPPCP9cXIfCmo5HMdZjmjVDkH8uO&bucket=github-hexo",
+    # "bucket": "github-hexo",  # 在七牛云存储上希望保存数据的 Bucket 名, 被官网的样例坑的好惨啊
+    # "sync_dir": "/home/coder352/github/jqrsync",  # 本地路径, 完全表示
+    "debug_level": 1
+    # "async_ops": "fop1;fop2;fopN",  # 设置上传预转参数，一般上传的音视频如果需要转码，可以使用该参数
+    # "ignore_patterns": *.~,  设置过滤规则, 类似于gitignore, 见官网
+}

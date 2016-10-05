@@ -4,3 +4,8 @@
 #################################################################
 gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8','GB18030','GB2312','GBK','BIG5','CURRENT','UTF-16']"
 #sudo apt-get install dconf-tools ->dconf-editor 
+
+##################################################################
+## 更改软件源
+##################################################################
+vim /etc/apt/sources.list 
