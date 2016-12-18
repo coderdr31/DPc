@@ -10,23 +10,16 @@
 # bits.
 #
 # By default this script does nothing.
-
 if [ ! -e /media/dr/软件 ]; then
     mkdir /media/dr/软件
 fi
 if [ ! -e /media/dr/文档 ]; then
     mkdir /media/dr/文档
 fi
-if [ ! -e /media/dr/ubuntu14 ]; then
-    mkdir /media/dr/ubuntu14
-fi
-
-mount /dev/sdb3 /media/dr/文档
-mount /dev/sdb4 /media/dr/ubuntu14
+# if [ ! -e /media/dr/ubuntu14 ]; then
+    # mkdir /media/dr/ubuntu14
+# fi
 mount /dev/sdb5 /media/dr/软件
-
-# 开机启动 fcgi
-# /usr/bin/spawn-fcgi -a 127.0.0.1 -p 9000 -C 5 -u www-data -g www-data -f /usr/bin/php-cgi7.0 -P /var/run/fastcgi-php.pid 
-
+mount /dev/sdb3 /media/dr/文档
 
 exit 0
