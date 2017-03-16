@@ -26,3 +26,5 @@ vim /etc/apt/sources.list
 $ VBoxManage internalcommands sethduuid '/media/dr/软件/win7/win7.vmdk'
 $ UUID changed to: 03048650-abc0-4c0c-817a-a22c0494c9d8
 ```
+### sogou拼音挂了
+删除~/.config目录下的SogouPY、SogouPY.users、sogou-qimpanel三个文件夹即可恢复正常
