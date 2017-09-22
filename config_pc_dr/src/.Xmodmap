@@ -1,0 +1,45 @@
+! # 把这个文件放到 ~/.Xmodmap
+! # xmodmap ~/.xmodmap 不用重启
+! xmodmap -pm  # 查看相应的设置
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Swap caps lock and escape
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! remove Lock = Caps_Lock
+! keysym Escape = Caps_Lock
+! keysym Caps_Lock = Escape
+! add Lock = Caps_Lock
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! make caps_lock an additional control
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! # This handy script makes CapsLock emit Escape's keycode if pressed alone, but when used in conjunction with another key it emits Ctrl.
+! # Right now this makes CapsLock be like left-control and both left-control and CapsLock now have the awesome dual roles of Escape and Ctrl
+! # 可以通过 xev 来查找 keycode
+! clear Lock
+! ! # NOTE: this keycode may need to be changed for your control
+! keycode 66 = Control_L
+! add Control = Control_L
+! ! # make escape be caps_lock
+! keysym Escape = Caps_Lock
+! add Lock = Caps_Lock
+! ! # make a fake escape key (so we can map it with xcape)
+! keycode 999 = Escape
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!! Swap Caps_Lock and Control_L, Swap Shift_R and Esc
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! remove Lock = Caps_Lock
+! remove Control = Control_L
+! keysym Control_L = Caps_Lock
+! keysym Caps_Lock = Control_L
+! add Lock = Caps_Lock
+! add Control = Control_L
+! 上面是交换大写和 Ctrl 下面是直接取消大写键
+clear Lock
+keycode 66 = Control_L
+add Control = Control_L
+
+remove Shift = Shift_R
+! keysym Escape = Shift_R  # 两个 Escpe 键了
+keysym Shift_R = Escape
+add Shift = Shift_R
