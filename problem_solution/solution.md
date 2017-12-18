@@ -17,6 +17,9 @@ vim /etc/apt/sources.list
 
   >* rfkill list all
   >* rfkill unblock all
+### ubuntu16.04耳机没有声音
+1. sudo apt install pavucontrol
+2. 终端 pavucontrol -> output选项栏中port选headphone
 
 ## 软件-problem
 ### virtualbox
