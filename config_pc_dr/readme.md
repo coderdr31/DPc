@@ -7,6 +7,7 @@
 2. lyx : sudo apt install lyx, 敲数学公式
 3. pandoc :sudo apt, 文件格式转换
 4. zathura: sudo apt, pdf阅读器
+5. htop: sudo apt, 管理进程
 
 #软件工具
 1. pdfcrop : 官网下载.
