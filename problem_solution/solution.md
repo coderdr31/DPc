@@ -31,3 +31,7 @@ $ UUID changed to: 03048650-abc0-4c0c-817a-a22c0494c9d8
 ```
 ### sogou拼音挂了
 删除~/.config目录下的SogouPY、SogouPY.users、sogou-qimpanel三个文件夹即可恢复正常
+
+### emacs
+1. ipython: pip install ipython==4.2.1(支持emacs好)
+2. f8报错: page页显示(drshellscript/bin/emacs写了).
