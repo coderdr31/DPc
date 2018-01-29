@@ -35,3 +35,6 @@ $ UUID changed to: 03048650-abc0-4c0c-817a-a22c0494c9d8
 ### emacs
 1. ipython: pip install ipython==4.2.1(支持emacs好)
 2. f8报错: page页显示(drshellscript/bin/emacs写了).
+
+### anaconda
+1. 换python版本: conda install python=3.5
