@@ -9,6 +9,7 @@
 4. zathura: sudo apt, pdf阅读器
 5. htop: sudo apt, 管理进程
 6. texlive-full: sudo apt, latex全家桶
+7. zeal: sudo apt, 离线api
 
 #软件工具
 1. pdfcrop : 官网下载.
